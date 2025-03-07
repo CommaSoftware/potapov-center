@@ -1,0 +1,97 @@
+.main-header {
+	display: contents;
+}
+
+.main-header-container {
+	padding: 16px 0;
+}
+
+.main-header__nav {
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	border-bottom: 1px solid var(--color-border-primary);
+	background-color: var(--color-bg-primary);
+}
+
+.main-header__nav .content-wrapper {
+	display: flex;
+	justify-content: space-between;
+	gap: 4px;
+}
+
+.main-header__nav.is-opened .icon[type="bars"] { 
+	display: none;
+}
+.main-header__nav:not(.is-opened) .icon[type="multiply"] { 
+	display: none; 
+}
+
+.main-header__nav:not(.is-opened) .main-nav .main-nav__full-list {
+	display: none;
+}
+
+.main-header__nav.is-opened .main-nav .main-nav__short-list {
+	display: none;
+}
+
+.main-header__nav .main-nav .main-nav__full-list {
+	padding: 4px 0;
+}
+
+.main-header__nav .main-nav .main-nav__full-list li:first-child {
+	border-left: none;
+}
+
+.main-header__content {
+	padding: 32px 0 16px 0;
+}
+
+.main-header__content .content-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-logoes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.main-logoes__potapov-block {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+	padding: 4px 16px 4px 4px;
+	background-color: var(--color-bg-hightlight);
+	border-radius: var(--border-radius-card-m);
+}
+
+.main-logoes__potapov-block img {
+	width: 54px;
+	aspect-ratio: 1/1;
+	border-radius: var(--border-radius-card-s);
+}
+
+.main-logoes__potapov-block span {
+	font-size: var(--font-size-heading-s);
+	letter-spacing: var(--font-letter-spacing);
+	font-weight: 600;
+	color: var(--color-elem-primary);
+}
+
+.main-logoes__coat-buryatia {
+	display: block;
+	margin-top: 2px;
+	height: 34px;
+}
+
+.main-logoes__site-name {
+	font-size: var(--font-size-content-s);
+	letter-spacing: var(--font-letter-spacing);
+	font-weight: 400;
+	color: var(--color-elem-secondary);
+}

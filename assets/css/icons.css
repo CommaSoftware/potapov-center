@@ -1,0 +1,48 @@
+.icon {
+	display: inline-block;
+	height: 16px;
+	aspect-ratio: 1/1;
+	background-size: contain;
+}
+
+.icon[type="archive"] 						{ background-image: url("../images/icons/archive.svg"); }
+.icon[type="2gis"]								{ background-image: url("../images/icons/2gis.svg"); }
+.icon[type="award"] 							{ background-image: url("../images/icons/award.svg"); }
+.icon[type="badge"] 							{ background-image: url("../images/icons/badge.svg"); }
+.icon[type="bank"] 								{ background-image: url("../images/icons/bank.svg"); }
+.icon[type="bars"] 								{ background-image: url("../images/icons/bars.svg"); }
+.icon[type="bookmark-in-book"] 		{ background-image: url("../images/icons/bookmark-in-book.svg"); }
+.icon[type="calender"] 						{ background-image: url("../images/icons/calender.svg"); }
+.icon[type="call"] 								{ background-image: url("../images/icons/call.svg"); }
+.icon[type="chat"] 								{ background-image: url("../images/icons/chat.svg"); }
+.icon[type="check"] 							{ background-image: url("../images/icons/check.svg"); }
+.icon[type="copyright"] 					{ background-image: url("../images/icons/copyright.svg"); }
+.icon[type="creative-commons"] 		{ background-image: url("../images/icons/creative-commons.svg"); }
+.icon[type="down-arrow"] 					{ background-image: url("../images/icons/down-arrow.svg"); }
+.icon[type="eye-slash"] 					{ background-image: url("../images/icons/eye-slash.svg"); }
+.icon[type="left-angle"] 					{ background-image: url("../images/icons/left-angle.svg"); }
+.icon[type="left-arrow"] 					{ background-image: url("../images/icons/left-arrow.svg"); }
+.icon[type="like-mail"] 					{ background-image: url("../images/icons/like-mail.svg"); }
+.icon[type="location"] 						{ background-image: url("../images/icons/location.svg"); }
+.icon[type="medal"] 							{ background-image: url("../images/icons/medal.svg"); }
+.icon[type="multiply"] 						{ background-image: url("../images/icons/multiply.svg"); }
+.icon[type="plus-square"] 				{ background-image: url("../images/icons/plus-square.svg"); }
+.icon[type="plus"] 								{ background-image: url("../images/icons/plus.svg"); }
+.icon[type="quote"] 							{ background-image: url("../images/icons/quote.svg"); }
+.icon[type="reply"] 							{ background-image: url("../images/icons/reply.svg"); }
+.icon[type="right-angle-alt"] 		{ background-image: url("../images/icons/right-angle-alt.svg"); }
+.icon[type="right-angle"] 				{ background-image: url("../images/icons/right-angle.svg"); }
+.icon[type="right-arrow-alt"] 		{ background-image: url("../images/icons/right-arrow-alt.svg"); }
+.icon[type="right-arrow"] 				{ background-image: url("../images/icons/right-arrow.svg"); }
+.icon[type="search"]							{ background-image: url("../images/icons/search.svg"); }
+.icon[type="stopwatch"] 					{ background-image: url("../images/icons/stopwatch.svg"); }
+.icon[type="telegram"] 						{ background-image: url("../images/icons/telegram.svg"); }
+.icon[type="vk"] 									{ background-image: url("../images/icons/vk.svg"); }
+
+.icon.is-color-white {
+	filter: brightness(14);
+}
+
+.icon.is-color-grey {
+	filter: brightness(7.5);
+}

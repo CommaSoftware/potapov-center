@@ -1,0 +1,61 @@
+:root {
+
+	/* Размеры и отступы */
+
+	--font-name: "DM Sans", sans-serif;
+	--font-letter-spacing: -0.005em;
+	--font-size-content-xs: 12px;
+	--font-size-content-s: 14px;
+	--font-size-content-m: 15px;
+	--font-size-content-l: 16px;
+	--font-size-heading-s: 20px;
+	--font-size-heading-m: 24px;
+	--font-size-heading-l: 32px;
+
+	--header-height: 178px;
+	--spacing-block: 48px;
+	--spacing-article: 16px;
+
+	--max-width-content-wrapper: 1280px;
+	--content-area-padding: 16px;
+	--column-count: 12;
+	--space-column-gap: 12px;
+	--space-column-plus-gap: calc((var(--max-width-content-wrapper) + var(--space-column-gap)) / var(--column-count));
+	--space-column: calc(var(--space-column-plus-gap) - var(--space-column-gap));
+	--space-column-2: calc((var(--space-column-plus-gap)) * 2 - var(--space-column-gap));
+	--space-column-3: calc((var(--space-column-plus-gap)) * 3 - var(--space-column-gap));
+	--space-column-4: calc((var(--space-column-plus-gap)) * 4 - var(--space-column-gap));
+	--space-column-6: calc((var(--space-column-plus-gap)) * 6 - var(--space-column-gap));
+
+	--border-radius-button-s: 1px;
+	--border-radius-button-m: 2px;
+	--border-radius-card-s: 4px;
+	--border-radius-card-m: 8px;
+	--border-radius-card-l: 16px;
+
+	/* Цвета */
+
+	--color-elem-primary: #151515;
+	--color-elem-primary-30p: #1515154D;
+	--color-elem-secondary: #9CA1AB;
+	--color-elem-hightlight: #6C93EC;
+	--color-elem-hightlight-text: #587DD4;
+	--color-elem-hightlight-ease: #647FBC;
+	--color-elem-hightlight-alt: #ED6F6F;
+	--color-bg-primary: #FFFFFF;
+	--color-bg-secondary: #F2F2F2;
+	--color-bg-hightlight: #EEF3FF;
+	--color-bg-hightlight-alt: #FFEEEE;
+	--color-bg-hightlight-light: #48505F;
+	--color-bg-hightlight-light-ease: #384051;
+	--color-bg-hightlight-dark: #21252D;
+	--color-bg-accent: var(--color-elem-primary);
+	--color-border-primary: #EDEDED;
+	--color-border-hightlight: #E4ECFF;
+
+	/* --gradient-article-dark: linear-gradient(from 30% 100% to 30% 0%, ) */
+
+	/* Transition times */
+	--transition-m: 150ms;
+
+}
