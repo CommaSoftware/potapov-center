@@ -4,7 +4,7 @@
 
 	--font-name: "DM Sans", sans-serif;
 	--font-letter-spacing: -0.005em;
-	--font-size-content-xs: 12px;
+	--font-size-content-xs: 13px;
 	--font-size-content-s: 14px;
 	--font-size-content-m: 15px;
 	--font-size-content-l: 16px;
@@ -53,7 +53,7 @@
 	--color-border-primary: #EDEDED;
 	--color-border-hightlight: #E4ECFF;
 
-	/* --gradient-article-dark: linear-gradient(from 30% 100% to 30% 0%, ) */
+	--gradient-article-dark: linear-gradient(to bottom left, #1A1E2733, #1A1E2773, #1A1E27CC);
 
 	/* Transition times */
 	--transition-m: 150ms;

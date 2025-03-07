@@ -46,3 +46,11 @@
 .icon.is-color-grey {
 	filter: brightness(7.5);
 }
+
+.icon:not(.is-color-blue) {
+	filter: brightness(5%);
+}
+
+.icon.is-not-colored {
+	filter: none;
+}

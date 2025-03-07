@@ -1,8 +1,5 @@
-.font-content-m {
-	font-family: var(--font-name);
-	font-size: var(--font-size-content-m);
-	letter-spacing: var(--font-letter-spacing);
-	line-height: normal;
+.section {
+	padding: var(--spacing-block) 0;
 }
 
 .content-wrapper {
@@ -11,6 +8,47 @@
 	padding: 0 var(--content-area-padding);
 	margin: 0 auto;
 }
+
+.section .content-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+/* Text elements */
+
+.text-label {
+	color: var(--color-elem-secondary);
+	font-size: var(--font-size-content-s);
+	letter-spacing: var(--font-letter-spacing);
+}
+
+.text-label.is-size-xs {
+	font-size: var(--font-size-content-xs);
+}
+
+.text-heading {
+	color: var(--color-elem-primary);
+	font-weight: 600;
+	font-size: var(--font-size-heading-s);
+	letter-spacing: var(--font-letter-spacing);
+}
+
+.text-link {
+	color: var(--color-elem-hightlight);
+	font-size: var(--font-size-content-xs);
+	letter-spacing: var(--font-letter-spacing);
+	text-decoration: none;
+	transition: var(--transition-m);
+}
+
+.text-link:hover,
+.text-link:active {
+	color: var(--color-elem-hightlight-text);
+}
+
+
+/* Buttons */
 
 .button {
 	--button-color-bg: var(--color-bg-primary);
@@ -95,6 +133,12 @@
 	--button-color-border: var(--color-bg-primary);
 }
 
+.button.is-style-primary-hightlight {
+	--button-color-bg: var(--color-bg-hightlight);
+	--button-color-text: var(--color-elem-hightlight);
+	--button-color-border: var(--color-bg-hightlight);
+}
+
 .button.is-style-secondary {
 	--button-color-bg: var(--color-bg-secondary);
 	--button-color-text: var(--color-elem-primary);
@@ -167,6 +211,10 @@
 .button.is-style-accent-hightlight .icon,
 .button.is-style-bordered-primary-alt .icon {
 	filter: brightness(1000);
+}
+
+.button.is-style-primary-hightlight .icon {
+	filter: none;
 }
 
 
@@ -242,4 +290,23 @@
 	display: flex;
 	flex-direction: column;
 	gap: 4px;
+}
+
+
+/* Headings element */
+
+.headings-block {
+	padding: 8px 0;
+}
+
+.headings-block,
+.headings-block__subheadings {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+}
+
+.headings-block__subheadings {
+	margin-right: auto;
 }
