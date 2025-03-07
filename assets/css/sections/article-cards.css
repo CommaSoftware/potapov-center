@@ -12,8 +12,21 @@
 	padding: 12px;
 	position: relative;
 	width: 100%;
+	border: 1px solid var(--color-border-primary);
 	border-radius: var(--border-radius-card-s);
 	overflow: hidden;
+	transition: var(--transition-m);
+}
+
+/* .article-card:hover,
+.article-card:active {
+	transform: scale(101%);
+} */
+
+.article-card__description-block {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
 }
 
 .article-card__heading {
@@ -39,13 +52,54 @@
 	height: 100%;
 }
 
+.article-card__cover {
+	display: block;
+	margin-top: 8px;
+	width: 100%;
+	aspect-ratio: 16/9;
+	object-fit: cover;
+	border-radius: var(--border-radius-button-m);
+}
+
+.article-card__meta-data {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 8px;
+}
+
+.article-card__categories {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 4px;
+	max-width: calc(100% - 70px);
+	overflow: hidden;
+}
+
+.article-card__categories li {
+	display: inherit;
+	list-style-type: none;
+}
+
+.article-card__categories li:not(:first-child)::before {
+	content: "·";
+	color: var(--color-elem-hightlight);
+	font-size: var(--font-size-content-xs);
+	letter-spacing: var(--font-letter-spacing);
+	margin-right: 4px;
+}
+
+
+/* Pinned style for cards */
+
 .article-card.is-style-pinned {
 	justify-content: flex-end;
 	aspect-ratio: 16/9;
+	border: none;
 	background-color: var(--color-bg-hightlight-light);
 }
 
-.article-card.is-style-pinned:first-of-type {
+.article-cards-grid.is-block-pinned .article-card.is-style-pinned:first-of-type {
 	grid-column: 1 / 3;
 	grid-row: 1 / 3;
 	aspect-ratio: initial;
@@ -65,9 +119,11 @@
 
 .article-card.is-style-pinned .article-card__cover {
 	display: block;
+	margin-top: 0;
 	position: absolute;
 	left: 0;
 	top: 0;
+	aspect-ratio: initial;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -80,28 +136,12 @@
 
 .article-card.is-style-pinned .article-card__meta-data {
 	z-index: 4;
-	display: flex;
-	align-items: center;
-	gap: 8px;
+	justify-content: flex-start;
 }
 
-.article-card__categories {
-	display: flex;
-	flex-wrap: nowrap;
-	gap: 4px;
-	max-width: calc(100% - 70px);
-  overflow: hidden;
-}
 
-.article-card__categories li {
-	display: inherit;
-	list-style-type: none;
-}
+/* Other cards block */
 
-.article-card__categories li:not(:first-child)::before {
-	content: "·";
-	color: var(--color-elem-hightlight);
-	font-size: var(--font-size-content-xs);
-	letter-spacing: var(--font-letter-spacing);
-	margin-right: 4px;
+.article-cards-grid.is-block-other {
+	padding-top: 12px;
 }
