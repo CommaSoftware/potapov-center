@@ -39,16 +39,16 @@
 .icon[type="telegram"] 						{ background-image: url("../images/icons/telegram.svg"); }
 .icon[type="vk"] 									{ background-image: url("../images/icons/vk.svg"); }
 
+.icon:not(.is-color-blue) {
+	filter: brightness(5%);
+}
+
 .icon.is-color-white {
 	filter: brightness(14);
 }
 
 .icon.is-color-grey {
-	filter: brightness(7.5);
-}
-
-.icon:not(.is-color-blue) {
-	filter: brightness(5%);
+	filter: brightness(100%) grayscale(80%);
 }
 
 .icon.is-not-colored {

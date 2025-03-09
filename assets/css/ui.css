@@ -1,5 +1,11 @@
+/* Blocks, sections and containers */
+
 .section {
 	padding: var(--spacing-block) 0;
+}
+
+.section.is-color-hilight {
+	background-color: var(--color-bg-hightlight);
 }
 
 .content-wrapper {
@@ -14,6 +20,19 @@
 	flex-direction: column;
 	gap: 12px;
 }
+
+
+/* Alinations */
+
+.has-scale-animation {
+	transition: var(--transition-m);
+}
+
+.has-scale-animation:hover,
+.has-scale-animation:active {
+	transform: scale(101%);
+}
+
 
 /* Text elements */
 
@@ -42,8 +61,8 @@
 	transition: var(--transition-m);
 }
 
-.text-link:hover,
-.text-link:active {
+.text-link:not(.is-no-hover):hover,
+.text-link:not(.is-no-hover):active {
 	color: var(--color-elem-hightlight-text);
 }
 

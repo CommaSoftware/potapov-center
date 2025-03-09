@@ -54,6 +54,7 @@
 	--color-border-hightlight: #E4ECFF;
 
 	--gradient-article-dark: linear-gradient(to bottom left, #1A1E2733, #1A1E2773, #1A1E27CC);
+	--gradient-event-dark: linear-gradient(to top, var(--color-bg-hightlight-dark), #1A1E2773, #1A1E27CC);
 
 	/* Transition times */
 	--transition-m: 150ms;

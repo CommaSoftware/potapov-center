@@ -76,4 +76,5 @@
 
 .copyright__label a {
 	color: inherit;
+	text-decoration: underline dotted;
 }
