@@ -157,6 +157,12 @@
 	--button-color-border: var(--color-elem-hightlight);
 }
 
+.button.is-style-oncolored {
+	--button-color-bg: var(--color-elem-primary-30p);
+	--button-color-text: var(--color-bg-primary);
+	--button-color-border: transparent;
+}
+
 .button.is-style-bordered-primary {
 	--button-color-bg: transparent;
 	--button-color-text: var(--color-elem-primary);
@@ -209,7 +215,8 @@
 
 .button.is-style-accent .icon,
 .button.is-style-accent-hightlight .icon,
-.button.is-style-bordered-primary-alt .icon {
+.button.is-style-bordered-primary-alt .icon,
+.button.is-style-oncolored .icon {
 	filter: brightness(1000);
 }
 

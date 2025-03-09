@@ -18,10 +18,10 @@
 	transition: var(--transition-m);
 }
 
-/* .article-card:hover,
+.article-card:hover,
 .article-card:active {
 	transform: scale(101%);
-} */
+}
 
 .article-card__description-block {
 	display: flex;
@@ -144,4 +144,65 @@
 
 .article-cards-grid.is-block-other {
 	padding-top: 12px;
+}
+
+
+/* Mailing banner */
+
+.mailing-block {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+	margin-top: 32px;
+	padding: 20px 24px;
+	border-radius: var(--border-radius-card-s);
+	overflow: hidden;
+
+	background-color: var(--color-elem-hightlight);
+	background-image: url("../../images/res/at-dynamic-clay.png");
+	background-size: 280px;
+	background-repeat: no-repeat;
+	background-position: center right 220px;
+	background-blend-mode: soft-light;
+}
+
+.mailing-block::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: calc(100% - 500px);
+	height: 100%;
+	z-index: 1;
+	background: linear-gradient(to right, var(--color-bg-hightlight-dark), #6C93ECFF);
+}
+
+.mailing-block__description {
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.mailing-block__description .text-heading {
+	color: var(--color-bg-primary)
+}
+
+.mailing-block__buttons-list {
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.mailing-block__bg-3d-icon {
+	display: block;
+	position: absolute;
+	top: -120px;
+	right: 232px;
+	width: 280px;
+	aspect-ratio: 1/1;
+
 }
