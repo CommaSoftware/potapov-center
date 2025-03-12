@@ -107,6 +107,14 @@
 	font-weight: 400;
 }
 
+.event-card__calender.is-style-red .event-card-calender__mounth {
+	background-color: var(--color-elem-hightlight-alt);
+}
+
+.event-card__calender.is-style-blue .event-card-calender__mounth {
+	background-color: var(--color-elem-hightlight);
+}
+
 .event-card-calender__day-block {
 	display: flex;
 	flex-direction: column;
@@ -145,4 +153,26 @@
 	color: var(--color-elem-primary);
 	font-size: var(--font-size-heading-l);
 	font-weight: 600;
+}
+
+.event-card.is-all-events-card .event-card__heading {
+	position: relative;
+}
+
+.event-card.is-all-events-card .event-card__calender:nth-of-type(1) {
+	position: absolute;
+	top: 24px;
+	left: 12px;
+}
+
+.event-card.is-all-events-card .event-card__calender:nth-of-type(2) {
+	position: absolute;
+	top: 18px;
+	left: 26px;
+}
+
+.event-card.is-all-events-card .event-card__calender:nth-of-type(3) {
+	position: absolute;
+	top: 12px;
+	left: 40px;
 }
