@@ -1,3 +1,9 @@
+#event-cards .content-wrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: var(--space-column-gap);
+}
+
 .event-card {
 	position: relative;
 	box-sizing: border-box;
@@ -6,7 +12,6 @@
 	justify-content: flex-end;
 	gap: 12px;
 	padding: 12px;
-	width: var(--space-column-3);
 	aspect-ratio: 1/1;
 	border-radius: var(--border-radius-card-m);
 	overflow: hidden;
@@ -14,7 +19,7 @@
 	text-decoration: none;
 }
 
-.event-card::after {
+.event-card:not(.is-all-events-card)::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -69,4 +74,75 @@
 	width: 100%;
 	justify-content: center;
 	border-radius: var(--border-radius-card-s);
+}
+
+.event-card__header {
+	margin-bottom: auto;
+}
+
+
+/* Calender */
+
+.event-card__calender {
+	position: relative;
+	z-index: 3;
+	display: inline-flex;
+	flex-direction: column;
+	width: fit-content;
+	background-color: var(--color-bg-primary);
+	border: 1px solid var(--color-border-primary);
+	border-radius: var(--border-radius-card-s);
+	overflow: hidden;
+}
+
+.event-card-calender__mounth {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 8px 2px 8px;
+	color: var(--color-bg-primary);
+	background-color: var(--color-elem-primary);
+	text-align: center;
+	font-size: var(--font-size-content-xs);
+	font-weight: 400;
+}
+
+.event-card-calender__day-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2px 4px;
+	min-height: 24px;
+}
+
+.event-card-calender__day {
+	color: var(--color-elem-primary);
+	font-size: var(--font-size-content-s);
+	font-weight: 500;
+}
+
+.event-card-calender__year {
+	color: var(--color-elem-secondary);
+	font-size: 8px;
+	font-weight: 400;
+}
+
+
+/* All events card */
+
+.event-card.is-all-events-card {
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 1px solid var(--color-elem-hightlight);
+}
+
+.event-card.is-all-events-card .text-label {
+	color: var(--color-elem-primary)
+}
+
+.event-card.is-all-events-card .event-card__heading {
+	color: var(--color-elem-primary);
+	font-size: var(--font-size-heading-l);
+	font-weight: 600;
 }
