@@ -78,8 +78,18 @@
 
 .event-card__header {
 	margin-bottom: auto;
+	display: flex;
+  justify-content: space-between;
 }
 
+/* Partners */
+
+.event-card__partners-list {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	gap: 4px;
+}
 
 /* Calender */
 
