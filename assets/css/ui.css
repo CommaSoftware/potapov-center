@@ -8,7 +8,7 @@
 	background-color: var(--color-bg-hightlight);
 }
 
-.section.is-color-bg-hightlight {
+.section.is-color-hightlight-dark {
 	background-color: var(--color-bg-hightlight-dark);
 }
 
@@ -55,6 +55,10 @@
 	font-weight: 600;
 	font-size: var(--font-size-heading-s);
 	letter-spacing: var(--font-letter-spacing);
+}
+
+.section.is-color-hightlight-dark .text-heading {
+	color: var(--color-bg-primary);
 }
 
 .text-link {
@@ -339,6 +343,10 @@
 
 .headings-block__subheadings {
 	margin-right: auto;
+}
+
+.section.is-color-hightlight-dark .headings-block__subheadings .text-label {
+	color: var(--color-elem-hightlight);
 }
 
 
