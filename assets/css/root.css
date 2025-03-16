@@ -49,6 +49,7 @@
 	--color-bg-hightlight-light: #48505F;
 	--color-bg-hightlight-light-ease: #384051;
 	--color-bg-hightlight-dark: #21252D;
+	--color-bg-hightlight-dark-45p: #21252D73;
 	--color-bg-accent: var(--color-elem-primary);
 	--color-border-primary: #EDEDED;
 	--color-border-hightlight: #E4ECFF;
@@ -56,7 +57,11 @@
 	--gradient-article-dark: linear-gradient(to bottom left, #1A1E2733, #1A1E2773, #1A1E27CC);
 	--gradient-event-dark: linear-gradient(to top, var(--color-bg-hightlight-dark), #1A1E2773, #1A1E27CC);
 
+	/* Shadows */
+	--box-shadow-hello-block-potapov: -16px -64px 64px #0B0C0D40;
+	--box-shadow-hello-block-text: 0px 0px 56px #0B0C0D70;
+
 	/* Transition times */
 	--transition-m: 150ms;
-
+	--transition-l: 250ms;
 }

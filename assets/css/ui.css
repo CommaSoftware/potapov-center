@@ -4,12 +4,16 @@
 	padding: var(--spacing-block) 0;
 }
 
-.section.is-color-hilight {
+.section.is-color-hightlight {
 	background-color: var(--color-bg-hightlight);
 }
 
+.section.is-color-bg-hightlight {
+	background-color: var(--color-bg-hightlight-dark);
+}
+
 .content-wrapper {
-	box-sizing: border-box;
+	box-sizing: content-box;
 	max-width: var(--max-width-content-wrapper);
 	padding: 0 var(--content-area-padding);
 	margin: 0 auto;
@@ -335,4 +339,37 @@
 
 .headings-block__subheadings {
 	margin-right: auto;
+}
+
+
+/* Text blocks */
+
+.block-quote {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: var(--font-size-content-m);
+	padding-top: 4px;
+	padding-left: 32px;
+}
+
+.block-quote::before {
+	content: url("data:image/svg+xml, <svg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M10.8 15.8889C10.8 16.5026 10.2627 17 9.6 17H7.2C6.53726 17 6 16.5026 6 15.8889V12.0646C6 11.3755 6.07442 10.7324 6.22325 10.1352C6.3969 9.51508 6.64496 8.97532 6.96744 8.51594C7.31473 8.05656 7.74884 7.68906 8.26976 7.41344C8.7907 7.13782 9.39845 7 10.093 7V8.72266C9.67132 8.72266 9.32403 8.82602 9.05116 9.03274C8.77829 9.21649 8.55504 9.46914 8.38139 9.79071C8.20775 10.1123 8.08372 10.4798 8.0093 10.8932C7.95969 11.2837 7.93489 11.6742 7.93489 12.0646H9.6C10.2627 12.0646 10.8 12.5621 10.8 13.1757V15.8889Z' fill='%23000000'/><path d='M18 15.8889C18 16.5026 17.4628 17 16.8 17H14.4C13.7372 17 13.2 16.5026 13.2 15.8889V12.0646C13.2 11.3755 13.2744 10.7324 13.4233 10.1352C13.5969 9.51508 13.8449 8.97532 14.1674 8.51594C14.5147 8.05656 14.9488 7.68906 15.4697 7.41344C15.9907 7.13782 16.5985 7 17.293 7V8.72266C16.8713 8.72266 16.5241 8.82602 16.2512 9.03274C15.9783 9.21649 15.755 9.46914 15.5814 9.79071C15.4078 10.1123 15.2837 10.4798 15.2093 10.8932C15.1597 11.2837 15.1349 11.6742 15.1349 12.0646H16.8C17.4628 12.0646 18 12.5621 18 13.1757V15.8889Z' fill='%23000000'/></svg>");
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 24px;
+	height: 24px;
+}
+
+.block-quote::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 12px;
+	top: 28px;
+	width: 1px;
+	height: calc(100% - 28px);
+	border-left: 1px solid var(--color-elem-primary);
 }
