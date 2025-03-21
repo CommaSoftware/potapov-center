@@ -65,3 +65,12 @@
 	--transition-m: 150ms;
 	--transition-l: 250ms;
 }
+
+
+/* ----------- Adaptation ----------- */
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--max-width-content-wrapper: 634px;
+	}
+}

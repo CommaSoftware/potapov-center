@@ -388,14 +388,18 @@
 @media screen and (max-width: 1024px) {
 	.main-nav__full-list {
 		display: grid;
-		grid-template-columns: repeat(3, auto);
+		grid-template-columns: repeat(3, 1fr);
 		justify-content: center;
+	}
+
+	.main-nav__full-list > li {
+		width: auto;
 	}
 }
 
 @media screen and (max-width: 720px) {
 	.main-nav__full-list {
-		grid-template-columns: repeat(2, auto);
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.main-header__nav .main-nav .main-nav__full-list > li:first-child {
