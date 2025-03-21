@@ -5,7 +5,6 @@
 }
 
 .project-card {
-	width: var(--space-column-4);
 	box-sizing: border-box;
 	display: flex;
 	text-decoration: none;
@@ -13,6 +12,7 @@
 	background: linear-gradient(to bottom, var(--color-bg-hightlight-light), var(--color-bg-hightlight-light-ease));
 	border-radius: var(--border-radius-card-s);
 	padding-right: 24px;
+	overflow: hidden;
 }
 
 .project-card__about {
@@ -39,4 +39,19 @@
 
 .project-card__about__date {
 	margin-top: auto;
+}
+
+
+/* ----------- Adaptation ----------- */
+
+@media screen and (max-width: 1312px) {
+	.project-cards__list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 670px) {
+  .project-cards__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

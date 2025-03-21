@@ -171,7 +171,7 @@
 
 @media screen and (max-width: 1312px) {
 	#hello-block {
-		--sidebar-height: 270px;
+		--sidebar-height: 271px;
 		height: auto;
 		min-height: auto;
 	}
@@ -201,7 +201,7 @@
 		position: relative;
 		left: -16px;
 		box-sizing: border-box;
-		width: calc(100% + 32px);
+		width: calc(100% + 40px);
 		height: auto;
 		padding: var(--spacing-block) 0;
 		background-color: var(--color-bg-hightlight-dark);
@@ -220,21 +220,30 @@
 		padding: 0 16px;
 	}
 
-	.hello-block-content__articles-sidebar .article-card:hover, .hello-block-content__articles-sidebar .article-card:active, .hello-block-content__articles-sidebar:not(:hover) .article-card:nth-child(2) {
-		width: var(--space-column-3);
-	}
-
+	.hello-block-content__articles-sidebar .article-card:hover, .hello-block-content__articles-sidebar .article-card:active, .hello-block-content__articles-sidebar:not(:hover) .article-card:nth-child(2),
 	.hello-block-content__articles-sidebar .article-card {
-		width: var(--space-column-3);
+		min-width: calc(50% - var(--space-column-gap));
 	}
 
 	.hello-block__bg {
 		height: fit-content;
 		height: calc(100% - var(--sidebar-height));
 	}
+
+	.mailing-block {
+		background-position: center right 32px;
+	}
+
+	.mailing-block .text-label {
+		color: var(--color-bg-hightlight);
+	}
 }
 
 @media screen and (max-width: 720px) {
+	#hello-block {
+		--sidebar-height: 233px;
+	}
+
 	.hello-block-content__about {
 		align-items: center;
 	}

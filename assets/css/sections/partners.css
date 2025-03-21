@@ -50,3 +50,19 @@
 .partner__icon {
 	height: 42px;
 }
+
+
+/* ----------- Adaptation ----------- */
+
+@media screen and (max-width: 670px) {
+	.partners-list {
+		overflow-x: auto;
+		scrollbar-width: none;
+	}
+
+	.partner {
+		min-width: var(--space-column-2);
+		height: auto;
+		aspect-ratio: 1/1;
+	}
+}
