@@ -165,3 +165,103 @@
 .hello-block-content__about__quote-block .block-quote::after {
 	border-left: 1px solid var(--color-bg-primary);
 }
+
+
+/* ----------- Adaptation ----------- */
+
+@media screen and (max-width: 1312px) {
+	#hello-block {
+		--sidebar-height: 270px;
+		height: auto;
+		min-height: auto;
+	}
+
+	#hello-block .hello-block-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 0;
+	}
+
+	.hello-block-content__about {
+		gap: 16px;
+		padding: var(--spacing-block) 0px;
+	}
+
+	.hello-block-content__articles-sidebar__scroll-block-content {
+		flex-direction: row;
+		width: fit-content;
+	}
+	
+	.hello-block-content__about__quote-block {
+		height: calc(var(--spacing-block) * 8);
+	}
+
+	.hello-block-content__articles-sidebar {
+		position: relative;
+		left: -16px;
+		box-sizing: border-box;
+		width: calc(100% + 32px);
+		height: auto;
+		padding: var(--spacing-block) 0;
+		background-color: var(--color-bg-hightlight-dark);
+		overflow-x: auto;
+	}
+
+	.hello-block-content__articles-sidebar::after {
+		display: none;
+	}
+	
+	.hello-block-content__articles-sidebar__scroll-block {
+		display: contents;
+	}
+
+	.hello-block-content__articles-sidebar__scroll-block-content {
+		padding: 0 16px;
+	}
+
+	.hello-block-content__articles-sidebar .article-card:hover, .hello-block-content__articles-sidebar .article-card:active, .hello-block-content__articles-sidebar:not(:hover) .article-card:nth-child(2) {
+		width: var(--space-column-3);
+	}
+
+	.hello-block-content__articles-sidebar .article-card {
+		width: var(--space-column-3);
+	}
+
+	.hello-block__bg {
+		height: fit-content;
+		height: calc(100% - var(--sidebar-height));
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.hello-block-content__about {
+		align-items: center;
+	}
+
+	.hello-block-content__about__quote-block {
+		display: none;
+	}
+	
+	.hello-block-content__about__buttons-list {
+		padding-top: 32px;
+		order: 1;
+	}
+
+	.hello-block-bg__potapov {
+		left: 0;
+		width: 100%;
+		height: auto;
+	}
+
+	.hello-block-content__about__description {
+		margin-bottom: 400px;
+		text-align: center;
+	}
+
+	.hello-block-content__about__heading {
+		text-align: center;
+		font-size: 72px;
+		line-height: 110%;
+	}
+}
