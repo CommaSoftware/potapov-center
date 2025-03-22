@@ -150,7 +150,7 @@
 		left: 0;
 		right: 0;
 		top: 68px;
-		/* height: calc(100dvh - 178px); */
+		height: calc(100dvh - 178px);
 		padding-bottom: 110px;
 		overflow-y: auto;
 	}
