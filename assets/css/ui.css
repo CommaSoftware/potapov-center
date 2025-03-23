@@ -8,6 +8,11 @@
 	padding-top: calc(var(--spacing-block) - 12px);
 }
 
+.section.is-has-only-heading {
+	padding-top: calc(var(--spacing-block) - 12px);
+	padding-bottom: calc(var(--spacing-block) - 12px);
+}
+
 .section.is-color-hightlight {
 	background-color: var(--color-bg-hightlight);
 }
@@ -267,15 +272,16 @@
 }
 
 .button.is-style-accent .icon,
-.button.is-style-accent-hightlight .icon,
-.button.is-style-primary-hightlight .icon,
 .button.is-style-bordered-primary-alt .icon,
 .button.is-style-oncolored .icon {
 	filter: brightness(1000);
 }
 
 .button.is-style-primary-hightlight .icon,
-.button.is-style-transparent-hightlight .icon {
+.button.is-style-transparent-hightlight .icon,
+.button.is-style-hightlight .icon,
+.button.is-style-accent-hightlight .icon,
+.button.is-style-primary-hightlight .icon {
 	filter: none;
 }
 
