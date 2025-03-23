@@ -4,7 +4,16 @@
 	gap: var(--space-column-gap);
 }
 
+#all-projects .project-cards__list {
+	margin-top: 12px;
+}
+
+.publications-grid .project-cards__list {
+	grid-template-columns: repeat(2, 1fr);
+}
+
 .project-card {
+	position: relative;
 	box-sizing: border-box;
 	display: flex;
 	text-decoration: none;
@@ -44,14 +53,50 @@
 
 /* ----------- Adaptation ----------- */
 
+@media screen and (min-width: 1312px) {
+	#all-projects .project-card:first-of-type::after {
+		content: "";
+		position: absolute;
+		right: 50%;
+		transform: translateX(50%) rotate(15deg);
+		bottom: 32px;
+		width: var(--space-column-2);
+		height: var(--space-column-2);
+		background-image: url("../../images/res/medal-front-clay.png");
+		background-size: contain;
+	}
+}
+
+@media screen and (min-width: 570px) {
+	#all-projects .project-card:first-of-type {
+		grid-column: 1 / -1;
+		aspect-ratio: 7/3;
+	}
+	
+	#all-projects .project-card:first-of-type {
+		background: linear-gradient(to bottom, var(--color-elem-hightlight-ease), var(--color-bg-hightlight-light));
+	}
+	
+	#all-projects .project-card:first-of-type .text-label,
+	#all-projects .project-card:first-of-type .text-link {
+		color: var(--color-bg-hightlight);
+	}
+	
+	#all-projects .project-card:first-of-type .project-card__about__heading {
+		font-size: var(--font-size-heading-l);
+	}
+}
+
 @media screen and (max-width: 1312px) {
-	.project-cards__list {
+	.project-cards__list,
+	.publications-grid .project-cards__list {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media screen and (max-width: 670px) {
-  .project-cards__list {
+  .project-cards__list,
+	.publications-grid .project-cards__list {
     grid-template-columns: repeat(1, 1fr);
   }
 }
