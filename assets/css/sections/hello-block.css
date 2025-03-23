@@ -134,6 +134,14 @@
 	text-shadow: var(--box-shadow-hello-block-text);
 }
 
+.hello-block-content__about__buttons-list {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .hello-block-content__about__description {
 	display: block;
 	width: 100%;

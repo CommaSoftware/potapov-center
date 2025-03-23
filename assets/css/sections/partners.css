@@ -60,7 +60,7 @@
 		scrollbar-width: none;
 	}
 
-	.partner {
+	.partner:not(.is-size-xs) {
 		min-width: var(--space-column-2);
 		height: auto;
 		aspect-ratio: 1/1;
