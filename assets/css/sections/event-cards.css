@@ -192,6 +192,12 @@
 
 @media screen and (max-width: 1312px) {
 	#event-cards .content-wrapper {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#event-cards .content-wrapper {
 		grid-template-columns: repeat(2, 1fr);
 	}
 }

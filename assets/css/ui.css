@@ -497,6 +497,14 @@
 /* ----------- Adaptation ----------- */
 
 @media screen and (max-width: 1024px) {
+	.publications-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.sidebar-categories {
+		grid-row-start: 1;
+	}
+
 	.main-nav__full-list {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
