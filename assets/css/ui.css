@@ -114,11 +114,15 @@
 	transition: var(--transition-m);
 }
 
-.button:hover {
+.button.is-no-hover {
+	cursor: default;
+}
+
+.button:not(.is-no-hover):hover {
 	filter: brightness(97.5%);
 }
 
-.button:active {
+.button:not(.is-no-hover):active {
 	filter: brightness(96.5%);
 }
 
@@ -212,8 +216,8 @@
 	--button-color-border: var(--color-elem-primary);
 }
 
-.button.is-style-bordered-primary:hover,
-.button.is-style-bordered-primary:active {
+.button.is-style-bordered-primary:not(.is-no-hover):hover,
+.button.is-style-bordered-primary:not(.is-no-hover):active {
 	--button-color-text: var(--color-bg-primary);
 	--button-color-bg: var(--color-elem-primary);
 }
@@ -224,8 +228,8 @@
 	--button-color-border: var(--color-bg-primary);
 }
 
-.button.is-style-bordered-primary-alt:hover,
-.button.is-style-bordered-primary-alt:active {
+.button.is-style-bordered-primary-alt:not(.is-no-hover):hover,
+.button.is-style-bordered-primary-alt:not(.is-no-hover):active {
 	--button-color-text: var(--color-elem-primary);
 	--button-color-bg: var(--color-bg-primary);
 }
@@ -236,8 +240,8 @@
 	--button-color-border: var(--color-elem-secondary);
 }
 
-.button.is-style-bordered-secondary:hover,
-.button.is-style-bordered-secondary:active {
+.button.is-style-bordered-secondary:not(.is-no-hover):hover,
+.button.is-style-bordered-secondary:not(.is-no-hover):active {
 	--button-color-text: var(--color-bg-primary);
 	--button-color-bg: var(--color-elem-secondary);
 }
@@ -254,11 +258,11 @@
 	--button-color-border: transparent;
 }
 
-.button.is-style-transparent:hover {
+.button.is-style-transparent:not(.is-no-hover):hover {
 	backdrop-filter: brightness(97.5%);
 }
 
-.button.is-style-transparent:active {
+.button.is-style-transparent:not(.is-no-hover):active {
 	backdrop-filter: brightness(95%);
 }
 
@@ -479,6 +483,16 @@
 	border-left: 1px solid var(--color-elem-primary);
 }
 
+/* Pagination */
+.pagination {
+	grid-column: 1 / -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 4px;
+	padding: 12px;
+}
 
 /* ----------- Adaptation ----------- */
 
