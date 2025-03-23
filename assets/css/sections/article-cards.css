@@ -4,6 +4,10 @@
 	gap: var(--space-column-gap);
 }
 
+.publications-grid .article-cards-grid {
+	grid-template-columns: repeat(3, 1fr);
+}
+
 .article-card {
 	box-sizing: border-box;
 	display: flex;
@@ -52,11 +56,15 @@
 
 .article-card__cover {
 	display: block;
-	margin-top: 8px;
+	margin-top: auto;
 	width: 100%;
 	aspect-ratio: 16/9;
 	object-fit: cover;
 	border-radius: var(--border-radius-button-m);
+}
+
+.article-cards-grid.is-block-other .article-card__cover {
+	padding-top: 8px;
 }
 
 .article-card__meta-data {
