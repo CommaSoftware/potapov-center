@@ -1,0 +1,14 @@
+.wp-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--font-size-content-m);
+	color: var(--color-elem-primary);
+	font-size: var(--font-size-content-m);
+}
+
+.wp-content p {
+	color: var(--color-elem-primary);
+	font-size: var(--font-size-content-m);
+	letter-spacing: var(--font-letter-spacing);
+	line-height: 140%;
+}

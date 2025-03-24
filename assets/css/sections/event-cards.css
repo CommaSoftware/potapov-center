@@ -211,6 +211,15 @@
 }
 
 
+/* Single header */
+
+.publication-header-section .event-card {
+	position: relative;
+	z-index: 2;
+	width: var(--space-column-3);
+}
+
+
 /* ----------- Adaptation ----------- */
 
 @media screen and (max-width: 1312px) {
@@ -222,6 +231,11 @@
 @media screen and (max-width: 1024px) {
 	#event-cards .content-wrapper {
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.publication-header-section .event-card {
+		margin: 0 12px;
+		width: var(--space-column-6);
 	}
 }
 

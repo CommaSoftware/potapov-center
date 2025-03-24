@@ -26,6 +26,7 @@
 	--space-column-3: calc((var(--space-column-plus-gap)) * 3 - var(--space-column-gap));
 	--space-column-4: calc((var(--space-column-plus-gap)) * 4 - var(--space-column-gap));
 	--space-column-6: calc((var(--space-column-plus-gap)) * 6 - var(--space-column-gap));
+	--space-column-8: calc((var(--space-column-plus-gap)) * 8 - var(--space-column-gap));
 
 	--border-radius-button-s: 1px;
 	--border-radius-button-m: 2px;
@@ -48,14 +49,17 @@
 	--color-bg-hightlight-alt: #FFEEEE;
 	--color-bg-hightlight-light: #48505F;
 	--color-bg-hightlight-light-ease: #384051;
+	--color-bg-hightlight-light-ease-95: #384051F2;
 	--color-bg-hightlight-dark: #21252D;
 	--color-bg-hightlight-dark-45p: #21252D73;
+	--color-bg-hightlight-dark-95p: #21252DF2;
 	--color-bg-accent: var(--color-elem-primary);
 	--color-border-primary: #EDEDED;
 	--color-border-hightlight: #E4ECFF;
 
 	--gradient-article-dark: linear-gradient(to bottom left, #1A1E2733, #1A1E2773, #1A1E27CC);
 	--gradient-event-dark: linear-gradient(to top, var(--color-bg-hightlight-dark), #1A1E2773, #1A1E27CC);
+	--gradient-project-dark: linear-gradient(to bottom, var(--color-bg-hightlight-light), var(--color-bg-hightlight-light-ease));
 
 	/* Shadows */
 	--box-shadow-hello-block-potapov: -16px -64px 64px #0B0C0D40;

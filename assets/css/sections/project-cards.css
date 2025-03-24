@@ -18,7 +18,7 @@
 	display: flex;
 	text-decoration: none;
 	aspect-ratio: 16/9;
-	background: linear-gradient(to bottom, var(--color-bg-hightlight-light), var(--color-bg-hightlight-light-ease));
+	background: var(--gradient-project-dark);
 	border-radius: var(--border-radius-card-s);
 	padding-right: 24px;
 	overflow: hidden;
@@ -49,6 +49,16 @@
 .project-card__about__date {
 	margin-top: auto;
 }
+
+
+/* Single header */
+
+.publication-header-section .project-card {
+	position: relative;
+	z-index: 2;
+	width: var(--space-column-4);
+}
+
 
 
 /* ----------- Adaptation ----------- */
@@ -91,6 +101,13 @@
 	.project-cards__list,
 	.publications-grid .project-cards__list {
 		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.publication-header-section .project-card {
+		margin: 0 16px;
+		width: var(--space-column-8);
 	}
 }
 
